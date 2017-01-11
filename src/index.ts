@@ -112,6 +112,11 @@ import { WebIntent } from './plugins/webintent';
 import { YoutubeVideoPlayer } from './plugins/youtube-video-player';
 import { ZBar } from './plugins/z-bar';
 import { Zip } from './plugins/zip';
+import { YztPlugin } from './plugins/yzt-plugin';
+import { FaceRecognition } from './plugins/face-recognition';
+
+export * from './plugins/yzt-plugin';
+export * from './plugins/face-recognition';
 export * from './plugins/3dtouch';
 export * from './plugins/actionsheet';
 export * from './plugins/admob';
@@ -224,6 +229,8 @@ export * from './plugins/zip';
 
 // Window export to use outside of a module loading system
 window['IonicNative'] = {
+  YztPlugin,
+  FaceRecognition,
   ActionSheet,
   AdMob,
   AndroidFingerprintAuth,
