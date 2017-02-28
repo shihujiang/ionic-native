@@ -114,9 +114,9 @@ import { ZBar } from './plugins/z-bar';
 import { Zip } from './plugins/zip';
 import { YztPlugin } from './plugins/yzt-plugin';
 import { FaceRecognition } from './plugins/face-recognition';
+import { Face } from './plugins/face';
+import { JycCashier} from './plugins/jyc-cashier';
 
-export * from './plugins/yzt-plugin';
-export * from './plugins/face-recognition';
 export * from './plugins/3dtouch';
 export * from './plugins/actionsheet';
 export * from './plugins/admob';
@@ -226,11 +226,18 @@ export * from './plugins/webintent';
 export * from './plugins/youtube-video-player';
 export * from './plugins/z-bar';
 export * from './plugins/zip';
+export * from './plugins/yzt-plugin';
+export * from './plugins/face-recognition';
+export * from './plugins/face';
+export * from './plugins/jyc-cashier';
+
 
 // Window export to use outside of a module loading system
 window['IonicNative'] = {
-  YztPlugin,
+  JycCashier,
+  Face,
   FaceRecognition,
+  YztPlugin,
   ActionSheet,
   AdMob,
   AndroidFingerprintAuth,
